@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:15-alpine # Versão compacta do PostgreSQL
+    container_name: postgres-container
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432" # Porta padrão do PostgreSQL
+    volumes:
+      - postgres-data:/var/lib/postgresql/data # Persistir dados no volume
+
+volumes:
+  postgres-data:

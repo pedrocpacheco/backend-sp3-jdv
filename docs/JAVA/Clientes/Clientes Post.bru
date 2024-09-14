@@ -1,0 +1,20 @@
+meta {
+  name: Clientes Post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/clientes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "João Silva",
+    "email": "joao.silva@example.com",
+    "password": "12345678"
+  }
+  
+}

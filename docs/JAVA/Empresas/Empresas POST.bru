@@ -1,0 +1,19 @@
+meta {
+  name: Empresas POST
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/empresas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Tech Solutions Ltda",
+    "cnpj": "12345678000190",
+    "contato": "(11) 98765-4321"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Clientes UPDATE
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/clientes/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Pedro Pacheco",
+    "email": "joao.silva@example.com",
+    "password": "12345678"
+  }
+  
+}
