@@ -1,0 +1,48 @@
+*DELETE - cliente*
+url: http://localhost:8080/clientes/2
+
+*GET ONE - cliente*
+url: http://localhost:8080/clientes/2
+
+*GET ALL - cliente*
+http://localhost:8080/clientes
+
+*POST - cliente*
+ url: http://localhost:8080/clientes
+{
+    "nome": "João Silva",
+    "email": "joao.silva@example.com",
+    "password": "12345678"
+  }(SENHA COM MINIMO DE 8)
+
+*UPDATE - cliente*
+ http://localhost:8080/clientes/2 (2 ou qualquer outro id que queira consultar)
+  {
+    "nome": "Pedro Pacheco",
+    "email": "joao.silva@example.com",
+    "password": "12345678"
+  }
+
+*DELETE - empresa*
+url: http://localhost:8080/empresas/2
+
+*GET ONE - empresa*
+url: http://localhost:8080/empresas/2
+
+*GET ALL - empresa*
+http://localhost:8080/empresas
+
+*POST - empresa*
+ url: http://localhost:8080/empresas
+{
+   "nome": "Tech Solutions Ltda",
+    "cnpj": "12345678000190",
+    "contato": "(11) 98765-4321"
+
+*UPDATE - empresa*
+ http://localhost:8080/empresas/2 (2 ou qualquer outro id que queira consultar)
+  {
+    "nome": "Tech Solutions Ltda",
+    "cnpj": "12345678000190",
+    "contato": "(11) 98765-4321"
+  }
